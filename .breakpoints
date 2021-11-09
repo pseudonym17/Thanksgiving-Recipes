@@ -1,0 +1,20 @@
+{
+  "files": {
+    "db.sqlite3": [
+      {
+        "id": "c6408beb-deb5-4213-8bc8-7de581cce3fc",
+        "line": 46,
+        "version": 1,
+        "index": 81937
+      }
+    ],
+    "mysite/views.py": [
+      {
+        "id": "25fc706c-f068-4e03-b127-01c2de2a425f",
+        "line": 6,
+        "version": 57,
+        "index": 113
+      }
+    ]
+  }
+}

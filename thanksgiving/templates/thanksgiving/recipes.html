@@ -1,0 +1,42 @@
+{% load static %}
+
+<head>
+    <title>Thanksgiving Recipes</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'thanksgiving/style.css' %}">
+</head>
+
+<body>
+
+<h1>Recipes</h1>
+
+<br>
+
+<button><a href="https://Thanksgiving-Recipes.caileyp.repl.co/home/">Home</a></button>
+
+<br><br>
+
+<table>
+    <tr>
+        <th>Category</th>
+        <th>Title</th>
+        <th>Source</th>
+    </tr>
+	<tr>
+		<td>{{dish.category}}</td>
+		<td>{{dish.title}}</td>
+		<td>{{dish.source}}</td>
+	</tr>
+	<!-- 
+	{% for dish in all_dishes %}
+	    <tr>
+            <td>{{dish.category}}</td>
+            <td>{{dish.title}}</td>
+            <td>{{dish.source}}</td>
+        </tr>
+    {% endfor %} -->
+
+</table>
+
+<br>
+
+</body>

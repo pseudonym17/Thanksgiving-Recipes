@@ -1,6 +1,6 @@
 # Overview
 
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
+{Talk about what you are trying to accomplish as a software engineer to further your learning.}
 
 {Provide a description the web app that you wrote. Describe how to start a test server on your computer and what website to open up to see the first page of the app.}
 
@@ -16,13 +16,13 @@
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
-
-{Describe the programming language that you used and any libraries.}
+* Replit
+* Django
+* HTML
+* CSS
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
 * [WikiHow](https://www.wikihow.com/)
 * [Web Site Name](http://url.link.goes.here)
 

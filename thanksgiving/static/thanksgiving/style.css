@@ -1,5 +1,5 @@
 body {
-	background-color: rgb(80, 25, 15);
+	background-image: url("https://mcdn.wallpapersafari.com/medium/58/50/z5Qvwx.jpg");
 	color: white;
 	text-shadow: 1px 1px 2px green;
 	text-align: center;
@@ -8,12 +8,34 @@ body {
 	padding-top: 20px;
 }
 
+#main {
+	background-color: rgb(80, 25, 15);
+	padding: 10px;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
 table, th, td {
     border: 1px solid black;
+	background-color: rgb(155, 97, 50);
 }
+
+th {background-color: rgb(68, 94, 21); }
 
 table {
     width: 100%;
+}
+
+button {
+	background-color: rgb(68, 94, 21);
+	color: white;
+}
+
+img {
+	height: 250px;
+	width: 300px;
+	border-color: rebeccapurple;
+	border-width: 10px;
 }
 
 .dropbtn {
@@ -32,7 +54,7 @@ table {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: lightgrey;
+    background-color: rgb(30, 70, 30);
     min-width: 20px;
     z-index: 1;
 }
@@ -46,4 +68,4 @@ table {
 
 .dropdown-content a:hover {background-color: white;}
 .dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: grey;}
+.dropdown:hover .dropbtn {background-color: rgb(30, 70, 30);}

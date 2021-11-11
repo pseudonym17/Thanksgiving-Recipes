@@ -6,37 +6,35 @@
 </head>
 
 <body>
+<div id="main">
+	<br><br>
 
-<h1>Recipes</h1>
+	<h1>Favorite {{dish_name}} Dishes</h1>
 
-<br>
+	<br>
 
-<button><a href="https://Thanksgiving-Recipes.caileyp.repl.co/home/">Home</a></button>
+	<table>
+		<tr>
+			<th>Category</th>
+			<th>Title</th>
+			<th>Servings</th>
+			<th>Time</th>
+			<th>Source</th>
+		</tr>
+		{% for dish in dishes %}
+			<tr>
+				<td>{{dish.category}}</td>
+				<td>{{dish.title}}</td>
+				<td>{{dish.servings}}</td>
+				<td>{{dish.prep_time}}</td>
+				<td><a href={{dish.source}}>View Full Recipe</a></td>
+			</tr>
+		{% endfor %}
 
-<br><br>
+	</table>
 
-<table>
-    <tr>
-        <th>Category</th>
-        <th>Title</th>
-        <th>Source</th>
-    </tr>
-	<tr>
-		<td>{{dish.category}}</td>
-		<td>{{dish.title}}</td>
-		<td>{{dish.source}}</td>
-	</tr>
-	<!-- 
-	{% for dish in all_dishes %}
-	    <tr>
-            <td>{{dish.category}}</td>
-            <td>{{dish.title}}</td>
-            <td>{{dish.source}}</td>
-        </tr>
-    {% endfor %} -->
+	<br>
 
-</table>
-
-<br>
-
+	<button><a href="https://Thanksgiving-Recipes.caileyp.repl.co/home/">Home</a></button>
+</div>
 </body>

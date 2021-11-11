@@ -7,54 +7,42 @@
 
 <body>
 
-	<h1>Happy Thanksgiving!</h1>
-	<h2>Getting ready for a Thanksgiving feast?</h2>
-	<h2>Here you can find your favorite Thanksgiving dishes and view some of the best recipes for these dishes. Choose the recipes that best fit your needs.</h2>
+	<div id="main">
 
-	<br>
-	<div class="dropdown">
-		<button class="dropbtn">Thanksgiving Dishes</button>
-		<div class="dropdown-content" action="{% url 'recipes' %}">
-			<a href="https://Thanksgiving-Recipes.caileyp.repl.co/recipes/">Turkey</a>
-			<a href="https://www.website.com">Stuffing</a>
-			<a href="https://www.website.com">Potatoes</a>
-		</div>
+		<h1>Happy Thanksgiving!</h1>
+		<h2>Getting ready for a Thanksgiving feast?</h2>
+		<h2>Here you can find your favorite Thanksgiving dishes and view some of the best recipes for these dishes.</h2>
+
+		<br>
+
+		<form action="{% url 'recipes' %}" method="POST">
+			{% csrf_token %}
+			Dish Categories
+			<select name="dish_category">
+			{% for category in category_list %}
+				<option value={{category.category}}>{{category.category}}</option>
+			{% endfor %}
+			</select>
+			<button>Find Recipes</button>
+		</form>
+		
+		<br><br>
+
+		<img src="https://cdn.hipwallpaper.com/i/50/41/nK3FUW.jpg" alt="Thanksgiving Dinner">
+
+		<br><br>
+
+		<h2>Add a new dish to our list</h2>
+		<form action="{% url 'home' %}" method="POST">
+			{% csrf_token %}
+			Category: <input type="text" name="category"><br>
+			Title: <input type="text" name="title"><br>
+			Servings: <input type="text" name="servings"><br>
+			Time: <input type="text" name="prep_time"><br>
+			Source: <input type="text" name="source"><br>
+			<br><button>Add New Dish</button>
+		</form>
+
 	</div>
-
-	<form action="{% url 'recipes' %}" method="POST">
-		{% csrf_token %}
-		Category: <input type="text" name="category"><br>
-	</form>
-
-	<br><br>
-
-	<table>
-		<tr>
-			<th>Category</th>
-			<th>Title</th>
-			<th>Source</th>
-		</tr>
-		<!-- -->
-		{% for dish in all_dishes %}
-			<tr>
-				<td>{{dish.category}}</td>
-				<td>{{dish.title}}</td>
-				<td>{{dish.source}}</td>
-			</tr>
-		{% endfor %} 
-
-	</table>
-
-	<br>
-
-	<form action="{% url 'home' %}" method="POST">
-		{% csrf_token %}
-		Category: <input type="text" name="category"><br>
-		Title: <input type="text" name="title"><br>
-		Servings: <input type="text" name="servings"><br>
-		Prep Time: <input type="text" name="prep_time"><br>
-		Source: <input type="text" name="source"><br>
-		<input type="submit" name="add_new_dish" value="Add New Dish">
-	</form>
 
 </body>

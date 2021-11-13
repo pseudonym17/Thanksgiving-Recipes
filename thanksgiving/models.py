@@ -11,6 +11,6 @@ class Dish(models.Model):
 	prep_time = models.CharField(max_length=10)
 	servings = models.IntegerField()
 	source = models.CharField(max_length=265)
-	#directions = models.CharField(max_length=2048)
 	category = models.CharField(max_length=100)
+	#directions = models.CharField(max_length=2048)
 	#ingredient = models.ManyToManyField(Ingredient)

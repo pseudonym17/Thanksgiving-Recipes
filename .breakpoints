@@ -15,6 +15,14 @@
         "version": 57,
         "index": 113
       }
+    ],
+    "thanksgiving/models.py": [
+      {
+        "id": "d0ecefd6-ae9d-4ea7-9c4f-8dccea435dfd",
+        "line": 17,
+        "version": 738,
+        "index": 514
+      }
     ]
   }
 }

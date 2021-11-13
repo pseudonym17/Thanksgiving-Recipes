@@ -6,7 +6,7 @@ I used Replit's web app template so I could get started quickly. This made it si
 
 My purpse for writing this software, other than to learn Django, was make the process of Thanksgiving meal preparation easier. With my site a user can find Thanksgiving recipes in one location rather than needing to search for each recipe individually. It provides the user with an organized recipe book specifically for Thanksgiving dishes.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Thanksgiving Recipes App Demo Video](https://youtu.be/GD6GHE4abMU)
 
 # Web Pages
 
